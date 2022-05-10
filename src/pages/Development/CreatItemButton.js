@@ -31,7 +31,7 @@ export default function CreateItemButton() {
         onClick={handleClick}
         variant="contained"
         startIcon={<Iconify icon="eva:plus-fill" />}
-      >New Item</Button>
+      >Need Help?</Button>
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
