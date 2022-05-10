@@ -1,10 +1,13 @@
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Iconify from '../../components/Iconify';
 
 export default function CreateItemButton() {
+    const navigate = useNavigate()
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -14,6 +17,10 @@ export default function CreateItemButton() {
     setAnchorEl(null);
   };
 
+  const handleCreateSprint = (e) => {
+    e.preventDefault()
+    navigate('/createSprint')
+  }
   return (
     <div>
       <Button
@@ -34,7 +41,7 @@ export default function CreateItemButton() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Sprint</MenuItem>
+        <MenuItem onClick={handleCreateSprint}>Sprint</MenuItem>
         <MenuItem onClick={handleClose}>Backlog</MenuItem>
         <MenuItem onClick={handleClose}>Documentation</MenuItem>
       </Menu>

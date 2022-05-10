@@ -249,7 +249,7 @@ export default function User() {
               ),
             },
             {
-              label: 'Backlog',
+              label: 'Log',
               value: '2',
               component: (
                 <>
