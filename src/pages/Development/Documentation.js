@@ -17,23 +17,16 @@ export function FloatingActionButtons({ currentPage = 'Documentation' }) {
     <Box sx={{ '& > :not(style)': { m: 1, mb: 3 } }}>
       <Fab variant="extended" id="addButton" color="primary" onMouseOver={handleMouseOver}>
         <AddIcon sx={{ m: 'auto' }} />
-        {currentId === 'addButton' && <>New Document</>}
-      </Fab>
-
-      <Fab variant="extended" id="editButton" color="light" onMouseOver={handleMouseOver}>
-        <EditIcon sx={{ m: 'auto' }} />
-        {currentId === 'editButton' && <>Edit</>}
+        New {currentPage === 'Sprints' ? 'Sprint' : currentPage}
       </Fab>
 
       <Fab variant="extended" id="feedbackButton" color="light" onMouseOver={handleMouseOver}>
-        <NavigationIcon sx={{ m: 'auto' }} />
-        Feedback
-        {currentId === 'feedbackButton' && <>? Let's Chat!</>}
+        <NavigationIcon sx={{ m: 'auto', mx: '5px' }} />
+        Feedback? Let's Chat!
       </Fab>
 
       <Fab variant="extended" id="likeButton" color="error" onMouseOver={handleMouseOver}>
-        <FavoriteIcon sx={{ m: 'auto' }} />
-        {currentId === 'likeButton' && <>Love This App!</>}
+        <FavoriteIcon sx={{ m: 'auto', mx: '5px' }} />
       </Fab>
     </Box>
   );

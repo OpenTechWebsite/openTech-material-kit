@@ -6,6 +6,7 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 
 export default function LabTabs({
+  onChangeCB,
   tabItems = [
     {
       label: 'How to Use Tabs',
@@ -23,6 +24,7 @@ export default function LabTabs({
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    onChangeCB(event, newValue);
   };
 
   return (

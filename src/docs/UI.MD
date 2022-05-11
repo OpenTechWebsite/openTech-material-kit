@@ -1,11 +1,12 @@
-# User Experience Design V 1.0
+# User Experience Design 
 
 ### Smartbuy Login Page
-[API](/api/OptimizerResult/GetOrders)
-
 - Brand 
 - Click Sign In or Get Started 
 - Copyright footer
+
+### APIs
+[GET: GetOrders](/api/OptimizerResult/GetOrders)
 
 ### Orders page 
 The most important one.
