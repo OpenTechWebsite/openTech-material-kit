@@ -6787,7 +6787,7 @@
   dependencies:
     "tmpl" "1.0.5"
 
-"markdown-to-jsx@^7.1.6":
+"markdown-to-jsx@^7.1.6", "markdown-to-jsx@^7.1.7":
   "integrity" "sha512-VI3TyyHlGkO8uFle0IOibzpO1c1iJDcXcS/zBrQrXQQvJ2tpdwVzVZ7XdKsyRz1NdRmre4dqQkMZzUHaKIG/1w=="
   "resolved" "https://registry.npmjs.org/markdown-to-jsx/-/markdown-to-jsx-7.1.7.tgz"
   "version" "7.1.7"
